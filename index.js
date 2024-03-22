@@ -8,7 +8,7 @@ app.use(express.json())
 const cors = require('cors')
 app.use(cors())
 
-
+app.use(express.static('dist'))
 
 // Define un nuevo token personalizado en Morgan
 morgan.token('postData', function(req, res) {
